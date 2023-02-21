@@ -1,5 +1,5 @@
 import React from 'react';
-import { githubSVG, linkedIn } from '../img';
+import { linkedIn } from '../img';
 
 const Footer = () => {
   return (
@@ -7,6 +7,7 @@ const Footer = () => {
       <h2 className="gradient-text">Contact Me</h2>
       <a
         target="_blank"
+        rel="noreferrer"
         href="https://www.linkedin.com/in/shalva-mishvelidze-212559257/"
       >
         <img src={linkedIn} alt="linkedin" />

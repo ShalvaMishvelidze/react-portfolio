@@ -6,19 +6,35 @@ const Projects = () => {
     <section id="projects">
       <h2>Some Of My Projects</h2>
       <div className="projects-container">
-        <a target="_blank" href="https://comfy-store-sm.netlify.app/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://comfy-store-sm.netlify.app/"
+        >
           <img src={comfyReact} alt="react e commerce app" />
           <p>React Comfy Store</p>
         </a>
-        <a target="_blank" href="https://search-github-user-sm.netlify.app/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://search-github-user-sm.netlify.app/"
+        >
           <img src={github} alt="search github user app" />
           <p>Search GitHub User</p>
         </a>
-        <a target="_blank" href="https://comfy-store-js-sm.netlify.app/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://comfy-store-js-sm.netlify.app/"
+        >
           <img src={comfyJs} alt="e commerce app js" />
           <p>JS Comfy Store</p>
         </a>
-        <a target="_blank" href="https://gpt3-website-sm.netlify.app/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://gpt3-website-sm.netlify.app/"
+        >
           <img src={gpt3} alt="gpt3 website clone" />
           <p>GPT3 Website</p>
         </a>
@@ -26,6 +42,7 @@ const Projects = () => {
       <h4>To view source code of my projects visit my Github page</h4>
       <a
         target="_blank"
+        rel="noreferrer"
         className="github-link"
         href="https://github.com/shalvamishvelidze"
       >
