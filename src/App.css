@@ -1,0 +1,232 @@
+.App {
+  background: var(--primary-black);
+  font-family: var(--font-family);
+  color: #81afdd;
+  padding: 0.1rem;
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(circle at 50% 50%, #005a89 0%, #021138 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 50% 50%,
+    #005a89 0%,
+    #021138 100%
+  );
+
+  /* 255 0 0 */
+  /* 153 50 204*/
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(circle at 50% 50%, #005a89 0%, #021138 100%);
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(circle at 50% 50%, #005a89 0%, #021138 100%);
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 50% 50%, #005a89 0%, #021138 100%);
+}
+
+.gradient-text {
+  /* background: #25b3cf;
+  background: linear-gradient(to bottom right, #25b3cf 0%, #cf2bcf 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  background: #782ba1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #782ba1,
+    #c84c4c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #782ba1,
+    #c84c4c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+nav {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  padding: 0 1rem;
+  text-decoration: none;
+  font-weight: var(--font-weight-slim);
+  color: var(--primary-white);
+  cursor: pointer;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+nav a:hover {
+  box-shadow: 0 0.3rem 1rem #ff8b7145;
+  color: #d67863;
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-name {
+  font-size: 3rem;
+  margin: var(--text-margin);
+}
+
+.job-desc {
+  font-size: 1.375rem;
+  margin: var(--text-margin);
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.265rem;
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.skill h4 {
+  margin: 0.5rem 0;
+  color: var(--primary-white);
+}
+
+.projects-btn {
+  color: var(--primary-white);
+  text-decoration: none;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid var(--primary-white);
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.projects-btn:hover {
+  background: #ddd;
+  box-shadow: 0 0 2.5rem var(--primary-white);
+  font-weight: bolder;
+  color: #000;
+}
+
+#about {
+  text-align: center;
+  margin: 0 4rem;
+  padding: 1rem 2rem;
+}
+
+#about h2 {
+  margin: 0 0 1rem;
+}
+
+#about p {
+  text-align: justify;
+  color: var(--primary-white);
+}
+
+#projects {
+  text-align: center;
+}
+
+.projects-container {
+  margin: 0 3rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.projects-container a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: 0.1s;
+}
+
+.projects-container a:hover {
+  box-shadow: 0 0 2rem #540754a2;
+}
+
+.projects-container a:hover p {
+  font-weight: bolder;
+  color: var(--primary-white);
+}
+
+.projects-container img {
+  width: 95%;
+  height: calc(83.5%);
+}
+
+.projects-container p {
+  margin-bottom: 0.5rem;
+}
+
+.github-link img {
+  width: 5rem;
+  transition: 0.5s;
+}
+
+.github-link img:hover {
+  width: 6rem;
+}
+
+#social {
+  margin: 0 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#social img {
+  width: 5rem;
+}
+
+#social img:hover {
+  width: 6rem;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1080px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #about {
+    margin: 0;
+  }
+  .projects-container {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .my-name {
+    font-size: 2rem;
+  }
+}
