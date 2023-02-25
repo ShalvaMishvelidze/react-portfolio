@@ -214,6 +214,9 @@ header {
 }
 
 @media screen and (max-width: 640px) {
+  nav{
+    font-size: 0.875rem;
+  }
   .projects-container {
     grid-template-columns: repeat(1, 1fr);
   }
