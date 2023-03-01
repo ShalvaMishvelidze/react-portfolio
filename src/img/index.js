@@ -8,6 +8,7 @@ import comfyReact from './comfy-store-react.png';
 import gpt3 from './gpt3.png';
 import githubSVG from './github.svg';
 import linkedIn from './linkedin.svg';
+import cocktails from './cocktails.png';
 
 export {
   html,
@@ -20,4 +21,5 @@ export {
   gpt3,
   githubSVG,
   linkedIn,
+  cocktails,
 };

@@ -1,5 +1,12 @@
 import React from 'react';
-import { gpt3, comfyJs, comfyReact, github, githubSVG } from '../img';
+import {
+  gpt3,
+  comfyJs,
+  comfyReact,
+  github,
+  githubSVG,
+  cocktails,
+} from '../img';
 
 const Projects = () => {
   return (
@@ -37,6 +44,14 @@ const Projects = () => {
         >
           <img src={gpt3} alt="gpt3 website clone" />
           <p>GPT3 Website</p>
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://cocktails-sm.netlify.app/"
+        >
+          <img src={cocktails} alt="cocktails website js" />
+          <p>Cocktails Website</p>
         </a>
       </div>
       <h4>To view source code of my projects visit my Github page</h4>
