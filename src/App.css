@@ -60,15 +60,15 @@ nav a {
   padding: 0 1rem;
   text-decoration: none;
   font-weight: var(--font-weight-slim);
-  color: var(--primary-white);
+  color: var(--font-default-color);
   cursor: pointer;
   height: 5rem;
   line-height: 5rem;
 }
 
 nav a:hover {
-  box-shadow: 0 0.3rem 1rem #ff8b7145;
-  color: #d67863;
+  color: #ca453e;
+  animation: upAndDown 0.8s ease-out;
 }
 
 header {
@@ -83,11 +83,19 @@ header {
 .my-name {
   font-size: 3rem;
   margin: var(--text-margin);
+  animation: moveInLeft 1s ease-out;
 }
 
 .job-desc {
   font-size: 1.375rem;
   margin: var(--text-margin);
+
+  animation: moveInRight 1s ease-out;
+}
+
+.skills-header {
+  animation: moveIn 1s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
 
 .skills {
@@ -96,6 +104,9 @@ header {
   align-items: center;
   justify-content: center;
   gap: 1.265rem;
+  animation: moveIn 1s ease-out 0.75s;
+  animation-fill-mode: backwards;
+  margin-bottom: 2rem;
 }
 
 .skill {
@@ -109,29 +120,67 @@ header {
 
 .skill h4 {
   margin: 0.5rem 0;
-  color: var(--primary-white);
+  color: var(--font-default-color);
 }
 
-.projects-btn {
-  color: var(--primary-white);
+.projects-btn:link,
+.projects-btn:visited {
+  opacity: 1;
+  text-transform: uppercase;
   text-decoration: none;
-  margin: 2rem auto;
-  padding: 1rem;
-  border: 1px solid var(--primary-white);
-  border-radius: 1rem;
-  transition: 0.2s;
+  font-weight: bolder;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
 }
 
 .projects-btn:hover {
-  background: #ddd;
-  box-shadow: 0 0 2.5rem var(--primary-white);
-  font-weight: bolder;
-  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem var(--btn-shadow);
+}
+
+.projects-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem var(--btn-shadow);
+}
+
+.projects-btn {
+  background-color: var(--primary-white);
+  color: var(--primary-black);
+}
+
+.projects-btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.projects-btn::after {
+  background-color: var(--primary-white);
+}
+
+.projects-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.projects-btn {
+  animation: moveIn 1s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
 
 #about {
   text-align: center;
-  margin: 0 4rem;
+  margin: 1rem 4rem;
   padding: 1rem 2rem;
 }
 
@@ -141,7 +190,7 @@ header {
 
 #about p {
   text-align: justify;
-  color: var(--primary-white);
+  color: var(--font-default-color);
 }
 
 #projects {
@@ -180,6 +229,12 @@ header {
 .projects-container p {
   margin-bottom: 0.5rem;
 }
+.github-container {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .github-link img {
   width: 5rem;
@@ -187,7 +242,8 @@ header {
 }
 
 .github-link img:hover {
-  width: 6rem;
+  animation: popOutLogo 1.8s;
+  animation-iteration-count: infinite;
 }
 
 #social {
@@ -203,8 +259,8 @@ header {
 }
 
 #social img:hover {
-  width: 6rem;
-  transition: 0.5s;
+  animation: popOutLogo 1.8s;
+  animation-iteration-count: infinite;
 }
 
 @media screen and (max-width: 1080px) {
@@ -214,7 +270,7 @@ header {
 }
 
 @media screen and (max-width: 640px) {
-  nav{
+  nav {
     font-size: 0.875rem;
   }
   .projects-container {

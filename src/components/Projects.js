@@ -55,14 +55,16 @@ const Projects = () => {
         </a>
       </div>
       <h4>To view source code of my projects visit my Github page</h4>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        className="github-link"
-        href="https://github.com/shalvamishvelidze"
-      >
-        <img src={githubSVG} alt="github page link" />
-      </a>
+      <div className="github-container">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          className="github-link"
+          href="https://github.com/shalvamishvelidze"
+        >
+          <img src={githubSVG} alt="github page link" />
+        </a>
+      </div>
     </section>
   );
 };
