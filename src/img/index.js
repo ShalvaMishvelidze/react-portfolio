@@ -1,6 +1,9 @@
 import html from './html.svg';
+import figma from './figma.svg';
 import css from './css.svg';
-import js from './js.svg';
+import sass from './sass.svg';
+import js from './javascript.svg';
+import ts from './typescript.svg';
 import react from './react.svg';
 import github from './search-github-user.png';
 import comfyJs from './comfy-store-js.png';
@@ -11,6 +14,9 @@ import linkedIn from './linkedin.svg';
 import cocktails from './cocktails.png';
 
 export {
+  figma,
+  sass,
+  ts,
   html,
   css,
   js,
