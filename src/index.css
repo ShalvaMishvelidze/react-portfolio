@@ -60,13 +60,13 @@ body {
 
 @keyframes popOutLogo {
   0% {
-    width: 5rem;
+    transform: scale(1);
   }
   50% {
-    width: 6rem;
+    transform: scale(1.2);
   }
   100% {
-    width: 5rem;
+    transform: scale(1);
   }
 }
 
