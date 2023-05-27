@@ -14,6 +14,7 @@ import linkedIn from './linkedin.svg';
 import cocktails from './cocktails.png';
 import natours from './natours.png';
 import jobster from './jobster.png';
+import redux from './redux.svg';
 
 export {
 	figma,
@@ -32,4 +33,5 @@ export {
 	cocktails,
 	natours,
 	jobster,
+	redux,
 };
