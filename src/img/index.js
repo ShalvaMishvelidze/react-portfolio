@@ -12,20 +12,24 @@ import gpt3 from './gpt3.png';
 import githubSVG from './github.svg';
 import linkedIn from './linkedin.svg';
 import cocktails from './cocktails.png';
+import natours from './natours.png';
+import jobster from './jobster.png';
 
 export {
-  figma,
-  sass,
-  ts,
-  html,
-  css,
-  js,
-  react,
-  github,
-  comfyJs,
-  comfyReact,
-  gpt3,
-  githubSVG,
-  linkedIn,
-  cocktails,
+	figma,
+	sass,
+	ts,
+	html,
+	css,
+	js,
+	react,
+	github,
+	comfyJs,
+	comfyReact,
+	gpt3,
+	githubSVG,
+	linkedIn,
+	cocktails,
+	natours,
+	jobster,
 };
