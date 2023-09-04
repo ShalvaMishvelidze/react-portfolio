@@ -27,9 +27,9 @@ const Projects = () => {
 				<a
 					target="_blank"
 					rel="noreferrer"
-					href="https://cocktails-sm.netlify.app/"
+					href="https://jobster-sm.netlify.app/"
 				>
-					<img src={jobster} alt="cocktails website js" />
+					<img src={jobster} alt="jobster" />
 					<p>Job Tracker App</p>
 				</a>
 				<a
