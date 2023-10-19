@@ -24,14 +24,14 @@ const Projects = () => {
 					<p>React Comfy Store</p>
 				</a>
 
-				<a
-					target="_blank"
-					rel="noreferrer"
-					href="https://jobster-sm.netlify.app/"
-				>
-					<img src={jobster} alt="jobster" />
-					<p>Job Tracker App</p>
-				</a>
+				// <a
+				// 	target="_blank"
+				// 	rel="noreferrer"
+				// 	href="https://jobster-sm.netlify.app/"
+				// >
+				// 	<img src={jobster} alt="jobster" />
+				// 	<p>Job Tracker App</p>
+				// </a>
 				<a
 					target="_blank"
 					rel="noreferrer"
