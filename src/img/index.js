@@ -8,6 +8,7 @@ import react from "./react.svg";
 import github from "./search-github-user.png";
 import comfyJs from "./comfy-store-js.png";
 import comfyReact from "./comfy-store-react.png";
+import nextJsStore from "./next-js-store.png";
 import gpt3 from "./gpt3.png";
 import githubSVG from "./github.svg";
 import linkedIn from "./linkedin.svg";
@@ -29,6 +30,7 @@ export {
   github,
   comfyJs,
   comfyReact,
+  nextJsStore,
   gpt3,
   githubSVG,
   linkedIn,

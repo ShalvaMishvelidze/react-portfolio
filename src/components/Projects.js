@@ -8,6 +8,7 @@ import {
   cocktails,
   natours,
   jobster,
+  nextJsStore,
 } from "../img";
 
 const Projects = () => {
@@ -15,6 +16,14 @@ const Projects = () => {
     <section id="projects">
       <h2>Some Of My Projects</h2>
       <div className="projects-container">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://tbc-react-course-project.vercel.app/store"
+        >
+          <img src={nextJsStore} alt="react e commerce app" />
+          <p>Next.js store</p>
+        </a>
         <a
           target="_blank"
           rel="noreferrer"
